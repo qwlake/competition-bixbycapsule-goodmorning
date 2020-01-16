@@ -4,4 +4,16 @@ structure (Time) {
     type (vivtime.DateTime)
     min (Required) max (One)
   }
+  // property (date) {
+  //   type (Tdate)
+  //   min (Required) max (One)
+  // }
+  // property (utc) {
+  //   type (Tutc)
+  //   min (Required) max (One)
+  // }
+  // property (time1) {
+  //   type (Time1)
+  //   min (Required) max (One)
+  // }
 }

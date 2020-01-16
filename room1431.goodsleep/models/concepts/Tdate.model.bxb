@@ -1,0 +1,8 @@
+structure-enum (Tdate) {
+  description (__DESCRIPTION__)
+  role-of (vivtime.Date)
+  features {
+    transient
+  }
+  
+}
