@@ -17,3 +17,4 @@ structure (Time) {
   //   min (Required) max (One)
   // }
 }
+
