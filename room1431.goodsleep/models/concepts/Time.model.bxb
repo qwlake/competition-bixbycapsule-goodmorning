@@ -4,3 +4,4 @@ structure (Time) {
     type (vivtime.DateTime)
     min (Required) max (One)
   }
+}
