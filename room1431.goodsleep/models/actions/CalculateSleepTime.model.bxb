@@ -1,0 +1,11 @@
+action (CalculateSleepTime) {
+  type (Search)
+  description (몇 시에 자야하는지 알려주기)
+  collect {
+    input (wakeupTime) {
+      type (WakeupTime)
+      min (Required) max (One)
+    }
+  }
+  output (ResultSleeps)
+}

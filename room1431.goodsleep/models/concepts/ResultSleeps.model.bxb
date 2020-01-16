@@ -1,0 +1,7 @@
+structure (ResultSleeps) {
+  description (잘 시간들)
+  property (resultSleeps) {
+    type (Time)
+    min (Required) max (Many)
+  }
+}

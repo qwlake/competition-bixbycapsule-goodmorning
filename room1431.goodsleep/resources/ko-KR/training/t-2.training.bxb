@@ -1,0 +1,5 @@
+train (t-25f89t9rjth8bf63molquz9wr) {
+  utterance ("[g:ResultWakeups] {[g:SleepTime] (지금)[v:vivtime.DateTimeExpression]} 자면 언제 개운하게 일어나?")
+  plan (Y2BhUCjKz881NDE21EvPz08pzklNLdALSi0uzSkJT8xOLS0oZlDDosI5MSe5NCexJBWiKCQzN5VBBou6YBAJlpUuyyzTKwGy9FyA2kBCrhUFRanFxZn5eQzMDIwMTECSAUwzAmkWIAbxmSByAA==)
+  last-modified (1579186189256)
+}

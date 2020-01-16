@@ -1,0 +1,10 @@
+structure (Timer) {
+  property (timerTime) {
+    type (Time)
+    min (Required) max (One)
+  }
+  property (reason) {
+    type (Reason)
+    min (Optional) max (One)
+  }
+}

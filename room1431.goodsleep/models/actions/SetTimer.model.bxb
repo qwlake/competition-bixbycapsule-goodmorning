@@ -1,0 +1,10 @@
+action (SetTimer) {
+  type (Search)
+  collect {
+    input (time) {
+      type (Time)
+      min (Required) max (One)
+    }
+  }
+  output (Timer)
+}

@@ -1,0 +1,7 @@
+structure (WakeupTime) {
+  description (일어날 시간)
+  role-of (vivtime.DateTimeExpression)
+  features {
+    transient
+  }
+}
