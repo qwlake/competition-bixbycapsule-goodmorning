@@ -1,5 +1,9 @@
-module.exports.function = function convertToDateTime(expr) {
-    const dates = require('dates');
+var dates = require('dates')
+var console = require('console')
+
+exports.convertToDateTime = convertToDateTime;
+
+function convertToDateTime(expr) {
     return dates.ZonedDateTime.of(
       expr.datetime);
   

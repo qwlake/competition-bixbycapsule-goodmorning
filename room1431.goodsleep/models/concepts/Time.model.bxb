@@ -1,7 +1,7 @@
 structure (Time) {
   description (시간)
-  role-of (vivtime.DateTimeExpression)
-  features {
-    transient
+  property (time) {
+    type (vivtime.DateTime)
+    min (Required) max (One)
   }
 }
