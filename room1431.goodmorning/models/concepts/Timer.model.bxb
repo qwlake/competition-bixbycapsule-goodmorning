@@ -1,6 +1,6 @@
 structure (Timer) {
   property (timerTime) {
-    type (Time)
+    type (DateTime)
     min (Required) max (One)
   }
   property (reason) {

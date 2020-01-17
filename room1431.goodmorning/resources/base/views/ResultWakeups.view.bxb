@@ -1,0 +1,19 @@
+result-view {
+  match: ResultWakeups (this)
+
+  message {
+    template ("일어나실 시간을 선택해 주세요.") 
+  }
+
+  render {
+    list-of (this.resultWakeup) {
+      where-each (item) {
+        layout-macro (TimeCard) {
+          param (timeCard) {
+            expression (item)
+          }
+        }
+      }
+    }
+  }
+}
