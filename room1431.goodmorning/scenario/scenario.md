@@ -11,7 +11,7 @@ CalculateSleepTime
 8시 : WakeupTime
 
 5. [발화 변수 : Output Concept]
-SleepTime
+ResultSleeps
 
 ********************************************************
 
@@ -28,4 +28,4 @@ CalculateWakeupTime
 지금 : SleepTime
 
 5. [발화 변수 : Output Concept]
-WakeupTime
+ResultWakeups

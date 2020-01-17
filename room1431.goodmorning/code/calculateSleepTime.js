@@ -7,8 +7,9 @@ module.exports.function = function calculateSleepTime (wakeupTime) {
   let time = utils.convertToDateTime(wakeupTime);
   let sleepTimes = [];
   while (dates.ZonedDateTime.now().isBefore(time)) {
-    sleepTimes.push(time.minusMinutes(104));
+    sleepTimes.push({resultSleep:time.minusMinutes(104)});
     time = time.minusMinutes(90);
   }
+  console.log(sleepTimes);
   return sleepTimes;
 }
