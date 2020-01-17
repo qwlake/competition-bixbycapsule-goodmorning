@@ -4,29 +4,17 @@ var utils = require('Utils.js')
 
 // 일어날 시간을 위한 잘 시간 계산
 module.exports.function = function calculateSleepTime (wakeupTime) {
-  let zonedDT = utils.convertToDateTime(wakeupTime);
+  let zonedDT = utils.toZonedDateTime(wakeupTime);
   let sleepTimes = [];
-  while (dates.ZonedDateTime.now().isBefore(zonedDT.minusMinutes(14))) {
-    sleepTimes.push({resultSleep:zonedDT.minusMinutes(104)});
-    zonedDT = zonedDT.minusMinutes(90);
-    let dt = {
-      date: {
-        year: zonedDT.getYear(),
-        month: zonedDT.getMonth(),
-        day: zonedDT.getDay()
-      },
-      time: {
-        hour: zonedDT.getHour(),
-        minute: zonedDT.getMinute(),
-        second: zonedDT.getSecond(),
-        timezone: zonedDT.getTimeZoneId()
-      }
-    }
+  zonedDT = zonedDT.minusMinutes(104);
+  while (dates.ZonedDateTime.now().isBefore(zonedDT)) {
+    let vivDateTime = utils.toVivDateTime(zonedDT);
     sleepTimes.push({
       resultSleep: {
-        datetime:dt,
+        datetime:vivDateTime,
       },
     });
+    zonedDT = zonedDT.minusMinutes(90);
   }
   sleepTimes = sleepTimes.reverse();
   console.log(sleepTimes);

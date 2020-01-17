@@ -6,5 +6,5 @@ train (t-25f89t9rjth8bf63molquz9wr) {
 train (t-2n2r6bpmimjiro4w2w1zwhqyg) {
   utterance ("[g:ResultSleeps] {[g:WakeupTime] (오늘 오전 4시)[v:vivtime.DateTimeExpression]}에 일어나고싶어")
   plan (Y2BhUCzKz881NDE21EvPz0/JzS/Ky8xL1wtKLS7NKQnOSU0tKGZQx6rEOTEnuTQnsSQVrCokMzeVQR6rwvDE7NRSiALpsswyvRIgS88FqBEk5FpRUJRaXJyZn8fAzMDIwAQkGcA0I5BmAWIQnwkiBwA=)
-  last-modified (1579274247452)
+  last-modified (1579274467080)
 }
