@@ -1,5 +1,0 @@
-train (t-39p6d53bzjda1fk9oso2g87km) {
-  utterance ("[g:ResultSleeps] {[g:WakeupTime] (6시)[v:vivtime.DateTimeExpression]}에 일어나려면 언제 자야해?")
-  plan (Y2BhUCzKz881NDE21EvPz0/JzS/Ky8xL1wtKLS7NKQnOSU0tKGZQx6rEOTEnuTQnsSQVrCokMzeVQR6rwvDE7NRSiALpsswyvRIgS88FqBEk5FpRUJRaXJyZn8fAzMDIwAQkGcA0I5BmAWIQnwkiBwA=)
-  last-modified (1579244418034)
-}
