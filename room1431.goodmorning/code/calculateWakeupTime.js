@@ -5,7 +5,6 @@ var utils = require('Utils.js')
 // 지금 자서 일어날 시간 계산
 module.exports.function = function calculateWakeupTime (sleepTime) {
     let zonedDT = utils.convertToDateTime(sleepTime);
-    console.log(zonedDT);
     let wakeupTimes = [];
     zonedDT = zonedDT.plusMinutes(14);
     for (let i = 0; i < 6; i++) {
@@ -25,10 +24,9 @@ module.exports.function = function calculateWakeupTime (sleepTime) {
       }
       wakeupTimes.push({
         resultWakeup: {
-          time:dt,
-          },
+          datetime:dt,
+        },
       });
-      console.log(dt);
     }
     console.log(wakeupTimes);
     return wakeupTimes;

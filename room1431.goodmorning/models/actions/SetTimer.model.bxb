@@ -1,8 +1,8 @@
 action (SetTimer) {
   type (Search)
   collect {
-    input (time) {
-      type (Time)
+    input (datetime) {
+      type (DateTime)
       min (Required) max (One)
     }
   }

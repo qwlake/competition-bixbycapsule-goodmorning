@@ -1,0 +1,31 @@
+layout-macro-def (TimeCard) {
+  params {
+    param (timeCard) {
+      type (DateTime)
+      min (Required) max (One)
+    }
+  }
+
+  content {
+    compound-card {
+      content {
+        single-line {
+          text {
+            value {
+              template (
+                "#{value(timeCard.datetime.time.hour)} #{value(timeCard.datetime.time.minute)}"
+              )
+            }
+            style (Title_L)
+          }
+        }
+      }
+      on-click {
+        intent {
+          goal: Timer
+          value: $expr(timeCard)
+        }
+      }
+    }
+  }
+}
