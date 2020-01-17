@@ -2,6 +2,6 @@ structure (ResultSleeps) {
   description (잘 시간들)
   property (resultSleep) {
     type (Time)
-    min (Required) max (Many)
+    min (Optional) max (Many)
   }
 }

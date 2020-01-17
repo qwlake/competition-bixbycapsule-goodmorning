@@ -1,7 +1,0 @@
-structure (Time1) {
-  description (__DESCRIPTION__)
-  role-of (vivtime.Time)
-  features {
-    transient
-  }
-}
