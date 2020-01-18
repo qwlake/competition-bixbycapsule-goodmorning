@@ -1,10 +1,14 @@
 structure (Timer) {
   property (timerTime) {
-    type (DateTime)
+    type (time.DateTime)
     min (Required) max (One)
   }
   property (reason) {
     type (Reason)
     min (Optional) max (One)
+  }
+  property (hasReason) {
+    type (core.Boolean)
+    min (Required) max (One)
   }
 }

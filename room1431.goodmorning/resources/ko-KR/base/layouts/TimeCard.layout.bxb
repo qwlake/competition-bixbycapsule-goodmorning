@@ -1,7 +1,7 @@
 layout-macro-def (TimeCard) {
   params {
     param (timeCard) {
-      type (DateTime)
+      type (time.DateTime)
       min (Required) max (One)
     }
   }
@@ -13,7 +13,7 @@ layout-macro-def (TimeCard) {
           text {
             value {
               template (
-                "#{value(timeCard.datetime.time.hour)} #{value(timeCard.datetime.time.minute)}"
+                "#{value(timeCard.time.hour)} #{value(timeCard.time.minute)}"
               )
             }
             style (Title_L)

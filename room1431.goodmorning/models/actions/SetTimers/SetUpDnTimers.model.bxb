@@ -1,11 +1,11 @@
-action (CalculateSleepTime) {
+action (SetUpDnTimers) {
+  description (취침시간과 기상시간 알람 생성)
   type (Search)
-  description (몇 시에 자야하는지 알려주기)
   collect {
     input (wakeupTime) {
       type (WakeupTime)
       min (Required) max (One)
     }
   }
-  output (ResultSleeps)
+  output (TimerList)
 }

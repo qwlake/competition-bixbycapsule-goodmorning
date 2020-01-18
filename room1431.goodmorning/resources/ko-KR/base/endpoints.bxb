@@ -1,0 +1,20 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (SetUpTimers) {
+      accepted-inputs (sleepPeriod)
+      local-endpoint (setTimers/setUpTimers.js)
+    }
+    action-endpoint (SetUpDnTimers) {
+      accepted-inputs (wakeupTime)
+      local-endpoint (setTimers/setUpDnTimers.js)
+    }
+    action-endpoint (PeriodHours) {
+      accepted-inputs (sleepPeriodHours)
+      local-endpoint (period/periodHours.js)
+    }
+    action-endpoint (PeriodMinutes) {
+      accepted-inputs (sleepPeriodMinutes)
+      local-endpoint (period/periodMinutes.js)
+    }
+  }
+}

@@ -1,7 +1,0 @@
-structure (DateTime) {
-  description (시간)
-  property (datetime) {
-    type (vivtime.DateTime)
-    min (Required) max (One)
-  }
-}
