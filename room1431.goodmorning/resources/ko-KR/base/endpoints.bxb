@@ -1,0 +1,33 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (SetUpTimers) {
+      accepted-inputs (sleepPeriod)
+      local-endpoint (setTimers/setUpTimers.js)
+    }
+    action-endpoint (SetUpDnTimers) {
+      accepted-inputs (wakeupTime)
+      local-endpoint (setTimers/setUpDnTimers.js)
+    }
+    action-endpoint (PeriodHours) {
+      accepted-inputs (sleepPeriodHours)
+      local-endpoint (period/periodHours.js)
+    }
+    action-endpoint (PeriodMinutes) {
+      accepted-inputs (sleepPeriodMinutes)
+      local-endpoint (period/periodMinutes.js)
+    }
+
+    // Audio Play EndPoint
+    action-endpoint (FindAudio) {
+      accepted-inputs (searchTerm)
+      local-endpoint (audio/FindAudio.js)
+    }
+    action-endpoint (PlayAudio) {
+      local-endpoint (audio/PlayAudio.js)
+    }
+    action-endpoint (BuildAudioInfo) {
+      accepted-inputs (audioList)
+      local-endpoint (audio/BuildAudioInfo.js)
+    }
+  }
+}

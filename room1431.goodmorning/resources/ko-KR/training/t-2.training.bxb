@@ -1,10 +1,10 @@
 train (t-25f89t9rjth8bf63molquz9wr) {
-  utterance ("[g:ResultWakeups] {[g:SleepTime] (지금)[v:vivtime.DateTimeExpression]} 자면 언제 개운하게 일어나?")
-  plan (Y2BhUCrKz881NDE21EvPz0/JzS/Ky8xL1wtKLS7NKQlPzE4tLShm0MCqxjkxJ7k0J7EkFaIsJDM3lUEOq8rgnNRUiLx0WWaZXgmQpecC1AgScq0oKEotLs7Mz2NgZmBkYAKSDGCaEUizADGIzwSRAwA=)
-  last-modified (1579244650162)
+  utterance ("[g:TimerList] {[g:SleepPeriod] (6시간)[v:time.Period]} 이상 자고 싶어")
+  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQxCrvnloCVgIiGBSwKgnOSU0tCEgtysxPYeAvyyzTKwGq1YMKMDMwMjABSQYwzQikWYAYxGeCyAEA)
+  last-modified (1579340718721)
 }
 train (t-2n2r6bpmimjiro4w2w1zwhqyg) {
-  utterance ("[g:ResultSleeps] {[g:WakeupTime] (오늘 오전 4시)[v:vivtime.DateTimeExpression]}에 일어나고싶어")
-  plan (Y2BhUCzKz881NDE21EvPz0/JzS/Ky8xL1wtKLS7NKQnOSU0tKGZQx6rEOTEnuTQnsSQVrCokMzeVQR6rwvDE7NRSiALpsswyvRIgS88FqBEk5FpRUJRaXJyZn8fAzMDIwAQkGcA0I5BmAWIQnwkiBwA=)
-  last-modified (1579274467080)
+  utterance ("[g:TimerList] {[g:WakeupTime] (오늘 오전 9시)[v:time.DateTimeExpression]}에 일어나고싶어")
+  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwiofnFoSWuCSB1ZWzCCPVU14YnZqaQFICYN0WWaZXgmQpeeSWJIKEnKtKChKLS7OzM9jYGZgZGACkgxgmhFIswAxiM8EkQMA)
+  last-modified (1579364427986)
 }

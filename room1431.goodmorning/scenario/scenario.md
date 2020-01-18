@@ -1,31 +1,32 @@
 1. 목적
-몇 시에 자야하는지 알려주기 - 자는 시간 알람, 일어나는 시간 잔잔한 음악 재생
+목표 수면시간을 만족하는 가장 빠른 취침시간과 가장 빠른 기상시간 제시 및 알람 설정
 
 2. [사용자가 입력할 말들]
-8시에 일어나려면 언제 자야해? 
+?시에 깨어나야 한다
 
 3. [발화 변수 : Action]
-CalculateSleepTime
+SetUpDnTimers
 
 4. [발화 변수 : Input Concept]
-8시 : WakeupTime
+WakeupTime
 
 5. [발화 변수 : Output Concept]
-ResultSleeps
+TimerList
 
 ********************************************************
 
 1. 목적
-지금 자면 몇 시에 개운하게 일어나는지
+목표 수면시간을 만족하는 가장 빠른 기상시간 제시 및 알람 설정
 
 2. [사용자가 입력할 말들]
-지금 자면 언제 개운하게 일어나?
+?시간 이상 자고 싶다
 
 3. [발화 변수 : Action]
-CalculateWakeupTime
+SetUpTimers
 
 4. [발화 변수 : Input Concept]
-지금 : SleepTime
+SleepPeriod
 
 5. [발화 변수 : Output Concept]
-ResultWakeups
+TimerList
+

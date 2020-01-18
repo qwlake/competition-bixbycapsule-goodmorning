@@ -1,7 +1,0 @@
-structure (SleepTime) {
-  description (자는 시간)
-  role-of (vivtime.DateTimeExpression)
-  features {
-    transient
-  }
-}

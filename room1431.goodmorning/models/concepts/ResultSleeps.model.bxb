@@ -1,7 +1,0 @@
-structure (ResultSleeps) {
-  description (잘 시간들)
-  property (resultSleep) {
-    type (DateTime)
-    min (Optional) max (Many)
-  }
-}

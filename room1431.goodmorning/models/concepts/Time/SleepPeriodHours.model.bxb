@@ -1,0 +1,4 @@
+decimal (SleepPeriodHours) {
+  description (수면기간-시간(h))
+  role-of (time.PeriodHours)
+}

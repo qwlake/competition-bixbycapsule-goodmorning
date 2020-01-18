@@ -1,0 +1,11 @@
+action (PeriodHours) {
+  description (SleepPeriodHours 연결)
+  type (Search)
+  collect {
+    input (sleepPeriodHours) {
+      type (SleepPeriodHours)
+      min (Required) max (One)
+    }
+  }
+  output (SleepPeriod)
+}

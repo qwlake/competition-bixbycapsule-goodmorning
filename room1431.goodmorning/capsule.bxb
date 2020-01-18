@@ -22,7 +22,7 @@ capsule {
   capsule-imports {
     import (viv.entity) { version(4.0.2) as (entity) }
     import (viv.core) { as (core) }
-    import (viv.time) { as (vivtime) version-from (entity)}
+    import (viv.time) { as (time) version-from (entity)}
     import (bixby.audioPlayer) {version (1.1.4) as (audioPlayer)}
   }
 

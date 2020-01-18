@@ -1,0 +1,11 @@
+action (PeriodMinutes) {
+  description (SleepPeriodMinutes 연결)
+  type (Search)
+  collect {
+    input (sleepPeriodMinutes) {
+      type (SleepPeriodMinutes)
+      min (Required) max (One)
+    }
+  }
+  output (SleepPeriod)
+}
