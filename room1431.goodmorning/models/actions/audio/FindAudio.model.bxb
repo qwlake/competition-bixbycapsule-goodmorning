@@ -1,0 +1,11 @@
+action (FindAudio) {
+  type (Search)
+  description (Finds meow audio item using a searchTerm)
+  collect {
+    input (searchTerm) {
+      type (SearchTerm)
+      min (Optional) max (One)
+    }
+  }
+  output (AudioList)
+}

@@ -1,0 +1,30 @@
+action (PlayAudio) {
+  type (Search)
+  
+  collect {
+    input (audioToPlay) {
+      description (Create the playlist to play)
+      type (audioPlayer.AudioInfo)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: BuildAudioInfo
+        } 
+      }
+      hidden     
+    }
+
+    computed-input (meow) {
+      description (By passing in the AudioInfo object to the PlayAudio action, we ask the client to play our sound.)
+      type (audioPlayer.Result)
+      compute {
+        intent {
+          goal: audioPlayer.PlayAudio
+          value: $expr(audioToPlay)
+        }
+      }
+      hidden
+    }
+  }
+  output (Result)     //의미없음
+}
