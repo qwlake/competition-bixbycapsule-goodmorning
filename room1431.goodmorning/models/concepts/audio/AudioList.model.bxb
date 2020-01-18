@@ -1,0 +1,3 @@
+structure (AudioList) {
+  role-of (audioPlayer.AudioItem)
+}
