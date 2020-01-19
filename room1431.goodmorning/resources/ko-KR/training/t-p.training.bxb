@@ -1,5 +1,5 @@
 train (t-pvhjigods0aajebzfxyoewh62) {
   utterance ("[g:TimerList] {[g:SleepPeriodHours] (6)[v:time.PeriodHours]}시간 동안 자고 싶어")
-  plan (Y2BjkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwCofnFoSWgBWVIxLRU5qakFAalFmfgoOFRBJj/xSoBmqhMyAKBMpyyzTKwFai6KZlYGRgYmBmYEFyGKAsxnBbAYgiwHIZwDLMjKwAAA=)
-  last-modified (1579423279358)
+  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwCofnFoSWgBWVMygil1FTmpqQUBqUWZ+ikd+KVCZSFlmmV4JUIsesigzAyMDE5BkANOMQJoFiEF8JogcAA==)
+  last-modified (1579428926233)
 }
