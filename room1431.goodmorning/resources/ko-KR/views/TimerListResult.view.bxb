@@ -17,6 +17,6 @@ result-view {
   // }
   
   app-launch {
-    payload-uri ("alarm://StartTimer?alarmAlertDate=#{value(this.timer.timerTime.date)}&alarmTime=#{value(this.timer.timerTime.time)}&alarmTime=#{value(this.timer.reason)}")
+    payload-uri ("intent://clockpackage#Intent;scheme=alarm;package=com.sec.android.app.clockpackage;alarmAlertDate=#{value(this.timer.timerTime.date)};alarmTime=#{value(this.timer.timerTime.time)};alarmTime=#{value(this.timer.reason)}end")
   }
 }
