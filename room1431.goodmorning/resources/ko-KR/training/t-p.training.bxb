@@ -1,5 +1,5 @@
 train (t-pvhjigods0aajebzfxyoewh62) {
-  utterance ("[g:ResultSleeps] {[g:WakeupTime] (오늘 아침 9시)[v:vivtime.DateTimeExpression]}에 일어나려면 언제 자야해?")
-  plan (Y2BhUCzKz881NDE21EvPz0/JzS/Ky8xL1wtKLS7NKQnOSU0tKGZQx6rEOTEnuTQnsSQVrCokMzeVQR6rwvDE7NRSiALpsswyvRIgS88FqBEk5FpRUJRaXJyZn8fAzMDIwAQkGcA0I5BmAWIQnwkiBwA=)
-  last-modified (1579273807337)
+  utterance ("[g:TimerList] {[g:SleepPeriodHours] (6)[v:time.PeriodHours]}시간 동안 자고 싶어")
+  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwCofnFoSWgBWVMygil1FTmpqQUBqUWZ+ikd+KVCZSFlmmV4JUIsesigzAyMDE5BkANOMQJoFiEF8JogcAA==)
+  last-modified (1579428926233)
 }

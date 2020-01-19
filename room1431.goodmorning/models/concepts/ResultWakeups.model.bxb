@@ -1,7 +1,0 @@
-structure (ResultWakeups) {
-  description (일어날 시간들)
-  property (resultWakeup) {
-    type (DateTime)
-    min (Optional) max (Many)
-  }
-}

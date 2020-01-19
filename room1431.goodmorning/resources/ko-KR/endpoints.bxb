@@ -1,16 +1,14 @@
 endpoints {
   action-endpoints {
-    action-endpoint (CalculateSleepTime) {
+    action-endpoint (SetUpTimers) {
+      accepted-inputs (sleepPeriodHours, sleepPeriodMinutes)
+      local-endpoint (setTimers/setUpTimers.js)
+    }
+    action-endpoint (SetUpDnTimers) {
       accepted-inputs (wakeupTime)
-      local-endpoint (calculateSleepTime.js)
+      local-endpoint (setTimers/setUpDnTimers.js)
     }
 
-    action-endpoint (CalculateWakeupTime) {
-      accepted-inputs (sleepTime)
-      local-endpoint (calculateWakeupTime.js)
-    }
-
-    
     // Audio Play EndPoint
     action-endpoint (FindAudio) {
       accepted-inputs (searchTerm)
@@ -23,7 +21,5 @@ endpoints {
       accepted-inputs (audioList)
       local-endpoint (audio/BuildAudioInfo.js)
     }
-
-
   }
 }

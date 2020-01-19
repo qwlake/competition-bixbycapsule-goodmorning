@@ -1,0 +1,7 @@
+structure (TimerList) {
+  description (타이머 리스트)
+  property (timer) {
+    type (Timer)
+    min (Optional) max (Many)
+  }
+}
