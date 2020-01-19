@@ -24,5 +24,5 @@ module.exports.function = function setUpDnTimers (wakeupTime) {
       hasReason:true,});
   }
   console.log(timerList);
-  return timerList;
+  return {timer:timerList};
 }

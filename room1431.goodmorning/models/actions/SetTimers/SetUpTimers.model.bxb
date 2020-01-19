@@ -2,9 +2,13 @@ action (SetUpTimers) {
   description (기상시간 알람 생성)
   type (Search)
   collect {
-    input (sleepPeriod) {
-      type (SleepPeriod)
-      min (Required) max (One)
+    input (sleepPeriodHours) {
+      type (SleepPeriodHours)
+      min (Optional) max (One)
+    }
+    input (sleepPeriodMinutes) {
+      type (SleepPeriodMinutes)
+      min (Optional) max (One)
     }
   }
   output (TimerList)
