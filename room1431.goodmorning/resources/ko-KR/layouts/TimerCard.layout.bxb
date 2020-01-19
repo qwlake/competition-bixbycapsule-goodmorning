@@ -1,7 +1,7 @@
-layout-macro-def (TimeCard) {
+layout-macro-def (TimerCard) {
   params {
-    param (timeCard) {
-      type (time.DateTime)
+    param (timer) {
+      type (Timer)
       min (Required) max (One)
     }
   }
@@ -13,17 +13,11 @@ layout-macro-def (TimeCard) {
           text {
             value {
               template (
-                "#{value(timeCard.time.hour)} #{value(timeCard.time.minute)}"
+                "#{value(timer.timerTime)}"
               )
             }
             style (Title_L)
           }
-        }
-      }
-      on-click {
-        intent {
-          goal: Timer
-          value: $expr(timeCard)
         }
       }
     }
