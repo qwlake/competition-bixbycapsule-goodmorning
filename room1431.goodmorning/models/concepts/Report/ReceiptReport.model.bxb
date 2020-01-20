@@ -1,0 +1,7 @@
+structure (ReceiptReport) {
+  description (리포트 완료)
+  property (timer) {
+    type (Timer)
+    min (Optional) max (Many)
+  }
+}

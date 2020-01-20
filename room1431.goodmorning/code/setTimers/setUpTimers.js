@@ -10,13 +10,16 @@ module.exports.function = function setUpTimers (sleepPeriodHours, sleepPeriodMin
   let until = zonedDT.plusHours(sleepPeriodHours);
   until.plusMinutes(sleepPeriodMinutes);
   zonedDT = zonedDT.plusMinutes(14);
+  let sleepCycle = 0;
   while (zonedDT.isBefore(until)) { //
     zonedDT = zonedDT.plusMinutes(90);
+    sleepCycle += 1;
   }
-  timerList.push({
+  timerList.push({timer:{
     timerTime:utils.toVivDateTime(zonedDT),
+    sleepCycle:sleepCycle,
     reason:"일어날 시간",
-    hasReason:true,});
+    hasReason:true,},});
   console.log(timerList);
-  return {timer:timerList};
+  return timerList;
 }

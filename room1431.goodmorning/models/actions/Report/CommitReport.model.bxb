@@ -1,0 +1,14 @@
+action (CommitReport) {
+  type (Commit)  
+  description (타이머 설정을 최종 확인한다.)
+  collect {
+    input (timersReport) {
+      type (TimersReport)
+      min (Required) max (One)
+    }
+  }
+  confirm {
+    by (core.Confirmation)
+  }
+  output (ReceiptReport)
+}

@@ -1,0 +1,7 @@
+enum (Command) {
+  description (Report 화면에서 사용되는 명령어)
+  symbol (예)
+  symbol (아니오)
+  symbol (더잘래)
+  symbol (덜잘래)
+}
