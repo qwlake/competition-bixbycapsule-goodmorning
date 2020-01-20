@@ -21,5 +21,19 @@ endpoints {
       accepted-inputs (audioList)
       local-endpoint (audio/BuildAudioInfo.js)
     }
+
+    // Report
+    action-endpoint (BeginReport) {
+      accepted-inputs (timerList)
+      local-endpoint (report/beginReport.js)
+    }
+    action-endpoint (UpdateReport) {
+      accepted-inputs (timersReport, command)
+      local-endpoint (report/updateReport.js)
+    }
+    action-endpoint (CommitReport) {
+      accepted-inputs (timersReport)
+      local-endpoint (report/commitReport.js)
+    }
   }
 }

@@ -7,6 +7,10 @@ structure (Timer) {
     type (SleepCycle)
     min (Required) max (One)
   }
+  property (imageUrl) {
+    type (ImageUrl)
+    min (Required) max (One)
+  }
   property (reason) {
     type (Reason)
     min (Optional) max (One)

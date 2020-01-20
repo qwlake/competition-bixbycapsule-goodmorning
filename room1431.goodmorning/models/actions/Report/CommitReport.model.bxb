@@ -6,6 +6,10 @@ action (CommitReport) {
       type (TimersReport)
       min (Required) max (One)
     }
+    input (command) {
+      type (Command)
+      min (Required) max (One)
+    }
   }
   confirm {
     by (core.Confirmation)

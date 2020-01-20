@@ -1,0 +1,23 @@
+result-view {
+  match {
+    TimerList (this) {
+      from-output: SetUpDnTimers
+    }
+  }
+
+  message ("#{value(this.timer[1].timerTime.time)}에 주무시면 #{value(this.timer[0].timerTime.time)}에 상쾌하게 일어나요.")
+
+  render {
+    layout {
+      section {
+        content {
+          image {
+            url ("[#{value(this.timer[0].imageUrl)}]")
+            aspect-ratio (16:9)
+            object-fit (Cover)
+          }
+        }
+      }
+    }
+  }
+}

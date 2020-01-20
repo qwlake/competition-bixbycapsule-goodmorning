@@ -1,0 +1,5 @@
+train (t-5f6qd5mmjaq2cuker1l6t50ml) {
+  utterance ("[g:ReceiptReport,r:CommitReport] (네)[v:Command:예]")
+  plan (Y2BhUCrKz881NDE21EvPz0/JzS/Ky8xL1wtKTU7NLCgJSi3ILyphUMSqxjk/NzcTpkQGp5LEvBQcBoRk5qYWFUMNYGZgZGACkgxAGgQhAMRnAvEA)
+  last-modified (1579518160716)
+}

@@ -1,0 +1,23 @@
+result-view {
+  match {
+    TimerList (this) {
+      from-output: SetUpTimers
+    }
+  }
+
+  message ("#{value(this.timer[0].timerTime.time)}로 알람을 맞출게요.")
+
+  render {
+    layout {
+      section {
+        content {
+          image {
+            url ("[#{value(this.timer[0].imageUrl)}]")
+            aspect-ratio (16:9)
+            object-fit (Cover)
+          }
+        }
+      }
+    }
+  }
+}
