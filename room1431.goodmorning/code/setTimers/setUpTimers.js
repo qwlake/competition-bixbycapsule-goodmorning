@@ -18,6 +18,7 @@ module.exports.function = function setUpTimers (sleepPeriodHours, sleepPeriodMin
   timerList.push({timer:{
     timerTime:utils.toVivDateTime(zonedDT),
     sleepCycle:sleepCycle,
+    imageUrl:"https://drive.google.com/uc?export=view&id=1_-bNs6iCFDeidLMMVgG0aUy-Xwy8eym-",
     reason:"일어날 시간",
     hasReason:true,},});
   console.log(timerList);

@@ -1,0 +1,5 @@
+train (t-rynpcr2pxrb9cdrnrt23d894f) {
+  utterance ("[g:ReceiptReport,r:CommitReport] (아니오)[v:Command:아니오]")
+  plan (Y2BhUCrKz881NDE21EvPz0/JzS/Ky8xL1wtKTU7NLCgJSi3ILyphUMSqxjk/NzcTpkQGp5LEvBQcBoRk5qYWFUMNYGZgZGACkgxAGgQhAMRnAvEA)
+  last-modified (1579518213964)
+}

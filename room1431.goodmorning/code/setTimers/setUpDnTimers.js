@@ -10,6 +10,7 @@ module.exports.function = function setUpDnTimers (wakeupTime) {
   timerList.push({timer:{
       timerTime:utils.toVivDateTime(zonedDT),
       sleepCycle:0,
+      imageUrl:"https://drive.google.com/uc?export=view&id=1_-bNs6iCFDeidLMMVgG0aUy-Xwy8eym-",
       reason:"일어날 시간",
       hasReason:true,},});
   zonedDT = zonedDT.minusMinutes(104);
@@ -25,6 +26,7 @@ module.exports.function = function setUpDnTimers (wakeupTime) {
     timerList.push({timer:{
       timerTime:vivDateTime,
       sleepCycle:0,
+      imageUrl:"https://drive.google.com/uc?export=view&id=1_-bNs6iCFDeidLMMVgG0aUy-Xwy8eym-",
       reason:"잘 시간",
       hasReason:true,},});
   }
