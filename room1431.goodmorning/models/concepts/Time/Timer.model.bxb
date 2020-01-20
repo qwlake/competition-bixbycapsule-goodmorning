@@ -3,6 +3,10 @@ structure (Timer) {
     type (time.DateTime)
     min (Required) max (One)
   }
+  property (sleepCycle) {
+    type (SleepCycle)
+    min (Required) max (One)
+  }
   property (reason) {
     type (Reason)
     min (Optional) max (One)

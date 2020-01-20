@@ -1,0 +1,32 @@
+action (UpdateReport) {
+  type (UpdateTransaction)
+  description (타이머 리포트를 업데이트한다)
+  collect {
+    input (timersReport) {
+      type (TimersReport)
+      min (Required) max (One)
+    }
+    input (command) {
+      type (Command)
+      min (Required) max (One)
+    }
+  }
+  output (TimersReport) {
+    throws{
+      error (MaximumSleepCycle) {
+        on-catch {
+          halt {
+            dialog("더 자면 몸에 좋지 않아요.")
+          }
+        }
+      }
+      error (MinimumSleepCycle) {
+        on-catch {
+          halt {
+            dialog("잘 수 있는 시간이 없어요.")
+          }
+        }
+      }
+    }
+  }
+}
