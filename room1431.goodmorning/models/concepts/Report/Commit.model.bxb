@@ -1,0 +1,5 @@
+enum (Commit) {
+  description (최종결정 명령어)
+  symbol (예)
+  symbol (아니오)
+}

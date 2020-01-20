@@ -1,5 +1,5 @@
 train (t-75t9xl3wceltj3toakj4mzi9q) {
-  utterance ("[g:TimerList] {[g:SleepPeriodHours] (6)[v:time.PeriodHours]}시간 이상 자고 싶어")
-  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwCofnFoSWgBWVMygil1FTmpqQUBqUWZ+ikd+KVCZSFlmmV4JUIsesigzAyMDE5BkANOMQJoFiEF8JogcAA==)
-  last-modified (1579517433068)
+  utterance ("[g:CommitReport] {[g:SleepPeriodHours] (6)[v:time.PeriodHours]}시간 이상 자고 싶어")
+  plan (fY0xCsJAEEV/THS1txNEBduFoCfQxsJCop7ADGHAzSybNed3SSKkSCw+zDzen8ECOydi0uMh1YVIbsSVXBY6oxex9RlZcR7bQecsxvBPWf1RRvoPNuSqrr8ZVE5UcNkZ6/EjV67GLtzJP237Cfth401kb+RY8ot8grasudY+VHSfzhFhghgJpphBhR2BRD0SAQ1rk4TEYVJNU30B)
+  last-modified (1579542842671)
 }
