@@ -6,8 +6,8 @@ action (CommitReport) {
       type (TimersReport)
       min (Required) max (One)
     }
-    input (command) {
-      type (Command)
+    input (commit) {
+      type (Commit)
       min (Required) max (One)
     }
   }

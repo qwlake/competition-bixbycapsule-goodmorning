@@ -1,0 +1,68 @@
+layout-macro-def (Confirmation_Section) {
+	params {
+		param (commitReport) {
+			type (CommitReport)
+		}
+	}
+	content {
+    section {
+      content {
+        title-area {
+          slot1 {
+            text {
+              style (Title_M)
+              value ("알람시간 : #{value(commitReport.timersReport.timer[0].timerTime)}")
+            }
+          }
+        }
+        // for-each (CommitReport.order.items) {
+        //   as (item) {
+        //     // split-input-cell {
+        //     //   left {
+        //     //     input-cell {
+        //     //       label ("Quantity")
+        //     //       value ("#{value(item.quantity)}")
+        //     //       on-click {
+        //     //         //This intent relies on searchTerm matching the item which is not a good practice, a better approach
+        //     //         //was to allow an ID as input to SelectItem and use `this.id` in the intent
+        //     //         intent {
+        //     //           goal {
+        //     //             CommitOrder
+        //     //             @context (Continuation) { Order }
+        //     //           }
+        //     //           value { SearchTerm$expr(item.shirt.title) }
+        //     //           route { UpdateOrder }
+        //     //           route { GetQuantity }
+        //     //         }
+        //     //       }
+        //     //     }
+        //     //   }
+        //     //   right {
+        //     //     input-cell {
+        //     //       label ("Size")
+        //     //       value ("#{value(item.size)}")
+        //     //       on-click {
+        //     //         // This intent relies on searchTerm matching the item which is not a good practice, a better approach
+        //     //         // was to allow an ID as input to SelectItem and use `this.id` in the intent
+        //     //         intent {
+        //     //           goal {
+        //     //             CommitOrder
+        //     //             @context (Continuation) { Order }
+        //     //           }
+        //     //           value { SearchTerm$expr(item.shirt.title) }
+        //     //           route { UpdateOrder }
+        //     //           route { GetSize }
+        //     //         }
+        //     //       }
+        //     //     }
+        //     //   }
+        //     // }
+        //     single-line {
+        //       spacer
+        //     }
+        //   }
+        // }
+      }
+    }
+	}
+}
