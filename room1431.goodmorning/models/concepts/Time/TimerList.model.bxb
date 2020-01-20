@@ -4,4 +4,7 @@ structure (TimerList) {
     type (Timer)
     min (Optional) max (Many)
   }
+  features{
+    transaction
+  }
 }
