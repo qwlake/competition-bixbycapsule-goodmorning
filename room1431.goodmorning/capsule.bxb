@@ -1,6 +1,6 @@
 capsule {
   id (room1431.goodmorning)
-  version (0.2.1)
+  version (0.1.1)
   format (3)
   targets {
     target (bixby-mobile-ko-KR)

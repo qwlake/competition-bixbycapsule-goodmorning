@@ -3,8 +3,8 @@ structure (Timer) {
     type (time.DateTime)
     min (Required) max (One)
   }
-  property (stringTime) {
-    type (StringTime)
+  property (millisec) {
+    type (Millisec)
     min (Optional) max (One)
   }
   property (reason) {
@@ -14,5 +14,9 @@ structure (Timer) {
   property (hasReason) {
     type (core.Boolean)
     min (Required) max (One)
+  }
+  property (resultMessage) {
+    type (ResultMessage)
+    min (Optional) max (One)
   }
 }
