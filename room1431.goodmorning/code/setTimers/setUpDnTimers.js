@@ -10,7 +10,14 @@ module.exports.function = function setUpDnTimers (wakeupTime) {
   let millisec = date.getDate();
   let timerList = [];
   let cycle = 1;
-  let resultMessage = wakeupTime.time + "으로 알람을 맞출게요.";
+  let resultMessage;
+  let h = timerTime.time.hour;
+  if (h > 12) {
+    h = h - 12;
+    resultMessage = "오후 " + h + "시 " + timerTime.time.minute + "분으로 알람을 맞출게요.";
+  } else {
+    resultMessage = "오전 " + h + "시 " + timerTime.time.minute + "분으로 알람을 맞출게요.";
+  }
   let timer = {
       timerTime:utils.toVivDateTime(zonedDT),
       millisec:millisec,

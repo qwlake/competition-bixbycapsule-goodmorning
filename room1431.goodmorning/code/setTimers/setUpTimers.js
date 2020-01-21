@@ -22,8 +22,15 @@ module.exports.function = function setUpTimers (sleepPeriodHours, sleepPeriodMin
   } else if (cycle < 3) {
     resultMessage = "4시간 미만의 수면은 좋지 않아요.";
   } else {
-    resultMessage = timerTime.time + "으로 알람을 맞출게요.";
+    let h = timerTime.time.hour;
+    if (h > 12) {
+      h = h - 12;
+      resultMessage = "오후 " + h + "시 " + timerTime.time.minute + "분으로 알람을 맞출게요.";
+    } else {
+      resultMessage = "오전 " + h + "시 " + timerTime.time.minute + "분으로 알람을 맞출게요.";
+    }
   }
+  console.log(resultMessage);
   let date = new Date(zonedDT.toString());
   let millisec = date.getDate();
   timerList.push({
