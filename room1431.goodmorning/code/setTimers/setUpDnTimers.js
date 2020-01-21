@@ -7,12 +7,12 @@ var utils = require('../Utils.js')
 module.exports.function = function setUpDnTimers (wakeupTime) {
   let zonedDT = utils.toZonedDateTime(wakeupTime);
   let timerList = [];
-  timerList.push({timer:{
+  timerList.push({
       timerTime:utils.toVivDateTime(zonedDT),
       sleepCycle:0,
       imageUrl:"https://drive.google.com/uc?export=view&id=1_-bNs6iCFDeidLMMVgG0aUy-Xwy8eym-",
       reason:"일어날 시간",
-      hasReason:true,},});
+      hasReason:true});
   zonedDT = zonedDT.minusMinutes(104);
   let vivDateTime;
   let sleepCycle = -1;
@@ -21,15 +21,15 @@ module.exports.function = function setUpDnTimers (wakeupTime) {
     zonedDT = zonedDT.minusMinutes(90);
     sleepCycle += 1;
   }
-  timerList[0].timer.sleepCycle = sleepCycle;
+  //timerList[0].timer.sleepCycle = sleepCycle;
   if (vivDateTime) {
-    timerList.push({timer:{
+    timerList.push({
       timerTime:vivDateTime,
       sleepCycle:0,
       imageUrl:"https://drive.google.com/uc?export=view&id=1_-bNs6iCFDeidLMMVgG0aUy-Xwy8eym-",
       reason:"잘 시간",
-      hasReason:true,},});
+      hasReason:true});
   }
   console.log(timerList);
-  return timerList;
+  return {timer:timerList};
 }
