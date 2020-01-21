@@ -25,15 +25,15 @@ endpoints {
     // Report
     action-endpoint (BeginReport) {
       accepted-inputs (timerList)
-      local-endpoint (report/beginReport.js)
+      local-endpoint (report/BeginReport.js)
     }
     action-endpoint (UpdateReport) {
       accepted-inputs (timersReport, command)
-      local-endpoint (report/updateReport.js)
+      local-endpoint (report/UpdateReport.js)
     }
     action-endpoint (CommitReport) {
       accepted-inputs (timersReport, commit)
-      local-endpoint (report/commitReport.js)
+      local-endpoint (report/CommitReport.js)
     }
   }
 }
