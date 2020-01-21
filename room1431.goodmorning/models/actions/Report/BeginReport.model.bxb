@@ -5,6 +5,9 @@ action (BeginReport) {
     input (timerList) {
       type (TimerList)
       min (Required) max (One)
+      //default-init {
+      //  intent: goal: SetUpDnTimers
+      //}
     }
   }
   output (TimersReport)
