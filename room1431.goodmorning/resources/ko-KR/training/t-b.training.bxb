@@ -1,5 +1,5 @@
 train (t-bj4nrz0stu7etszuq9qgx3pvg) {
-  utterance ("[g:TimersReport,r:UpdateReport] (덜잘래)[v:Command:덜잘래]")
-  plan (Y2BhUCzKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0tKg5KLcgvKsGhJLQgJbEkFapEBqsS5/zc3MS8FGLsYGZgZGACkgxAGgQhAMRnAvEA)
-  last-modified (1579542850694)
+  utterance ("[g:CommitReport,r:UpdateReport] (덜잘래)[v:Command:덜잘래]")
+  plan (Y+BgUCrKz881NDE21EvPz0/JzS/Ky8xL1wtKTU7NLCgJSi3ILyphUMSqxjk/NzcTpkQajxIc+kMyc1OLivFaEVqQkliSilcJiimaBE2pKwVzihlkcDo4MS+FgZ2BkYGJgZmBhYGVgQ3IYwDyGcF8FiCfkYEBLAIDzEA2O1CGAQA=)
+  last-modified (1579567437804)
 }
