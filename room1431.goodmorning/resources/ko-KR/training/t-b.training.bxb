@@ -1,0 +1,5 @@
+train (t-br01ej3c3dl9a3rc5d9rddz6y) {
+  utterance ("[g:TimerList] {[g:room1431.goodmorning.SleepPeriodHours] (6)[v:viv.time.PeriodHours:6]}시간 자고싶어")
+  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwCofnFoSWgBWVMygil1FTmpqQUBqUWZ+ikd+KVCZSFlmmV4JUIsesigzAyMDE5BkANOMQJoFiEF8JogcAA==)
+  last-modified (1579588817803)
+}

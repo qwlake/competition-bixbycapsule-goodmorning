@@ -1,5 +1,5 @@
 train (t-2n2r6bpmimjiro4w2w1zwhqyg) {
-  utterance ("[g:TimerList] {[g:WakeupTime] (내일 오전 9시)[v:time.DateTimeExpression]}에 일어나고싶어")
+  utterance ("[g:TimerList] {[g:WakeupTime] (내일 오전 8시)[v:time.DateTimeExpression]}에 일어나고싶어")
   plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwiofnFoSWuCSB1ZWzCCPVU14YnZqaQFICYN0WWaZXgmQpeeSWJIKEnKtKChKLS7OzM9jYGZgZGACkgxgmhFIswAxiM8EkQMA)
-  last-modified (1579427507931)
+  last-modified (1579582614623)
 }

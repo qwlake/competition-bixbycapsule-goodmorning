@@ -1,7 +1,7 @@
 result-view {
   match: TimerList (this)
 
-  message("말씀하신 시간을 고려해서 알람을 맞출게요.")
+  message("#{value(this.timer[0].resultMessage)}")
 
   // render {
   //   list-of (this.timer) {
@@ -17,6 +17,6 @@ result-view {
   // }
   
   app-launch {
-    payload-uri ("intent://clockpackage#Intent;scheme=alarm;package=com.sec.android.app.clockpackage;alarmAlertDate=#{value(this.timer.timerTime.date)};alarmTime=#{value(this.timer.timerTime.time)};alarmTime=#{value(this.timer.reason)}end")
+    payload-uri ("com.mysample.alarmme://setalarm?millisec=#{value(this.timer.millisec)}&message=#{value(this.timer.reason)}")
   }
 }
