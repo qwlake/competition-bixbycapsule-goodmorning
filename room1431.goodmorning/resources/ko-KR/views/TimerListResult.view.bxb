@@ -1,7 +1,7 @@
 result-view {
   match: TimerList (this)
 
-  message("this.timer[0].resultMessage")
+  message("#{value(this.timer[0].resultMessage)}")
 
   // render {
   //   list-of (this.timer) {
@@ -17,6 +17,6 @@ result-view {
   // }
   
   app-launch {
-    payload-uri ("com.mysample.alarmme://setalarm?millisec=#{value(this.timer.millisec)}&message=TEST")
+    payload-uri ("com.mysample.alarmme://setalarm?millisec=#{value(this.timer.millisec)}&message=#{value(this.timer.reason)}")
   }
 }
