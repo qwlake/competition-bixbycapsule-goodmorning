@@ -32,7 +32,7 @@ module.exports.function = function setUpTimers (sleepPeriodHours, sleepPeriodMin
   }
   console.log(resultMessage);
   let date = new Date(zonedDT.toString());
-  let millisec = date.getDate();
+  let millisec = date.getTime();
   timerList.push({
     timerTime:timerTime,
     millisec:millisec,
