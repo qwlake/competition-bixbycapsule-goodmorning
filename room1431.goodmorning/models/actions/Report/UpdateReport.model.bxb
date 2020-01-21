@@ -6,9 +6,15 @@ action (UpdateReport) {
       type (TimersReport)
       min (Required) max (One)
     }
-    input (command) {
-      type (Command)
-      min (Required) max (One)
+    input-group(updates){
+      requires(ZeroOrMoreOf)
+      collect{
+        input(command){
+          type(Command)
+          min (Required)
+          max (One)
+        }
+      }
     }
   }
   output (TimersReport) {

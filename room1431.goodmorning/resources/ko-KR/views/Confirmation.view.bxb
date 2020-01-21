@@ -1,0 +1,21 @@
+confirmation-view {
+	match {
+		core.Confirmation {
+			confirming {
+				CommitReport (action)
+			}
+		}
+	}
+	
+	message ("이렇게 알람을 설정할까요?")
+	
+	mode (Transactional)
+	
+	render {
+		layout-macro (Confirmation_Section) {
+			param (commitReport) {
+				expression (action)
+			}
+		}
+	}
+}

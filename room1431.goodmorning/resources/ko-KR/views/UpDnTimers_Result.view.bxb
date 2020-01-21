@@ -14,7 +14,7 @@ result-view {
           image {
             url ("[#{value(this.timer[0].imageUrl)}]")
             aspect-ratio (16:9)
-            object-fit (Cover)
+            object-fit (Contain)
           }
         }
       }

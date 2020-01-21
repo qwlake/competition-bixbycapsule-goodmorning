@@ -1,5 +1,5 @@
 train (t-rynpcr2pxrb9cdrnrt23d894f) {
-  utterance ("[g:ReceiptReport,r:CommitReport] (아니오)[v:Command:아니오]")
-  plan (Y2BhUCrKz881NDE21EvPz0/JzS/Ky8xL1wtKTU7NLCgJSi3ILyphUMSqxjk/NzcTpkQGp5LEvBQcBoRk5qYWFUMNYGZgZGACkgxAGgQhAMRnAvEA)
-  last-modified (1579518213964)
+  utterance ("[g:CommitReport,r:UpdateReport] (아니오)[v:Commit:아니오]")
+  plan (Y2BjUCrKz881NDE21EvPz0/JzS/Ky8xL1wtKTU7NLCgJSi3ILyphUMSqxjk/NzcTpkQajxIc+kMyc1OLivFaEVqQkliSilcJiimsDIwMTAzMDCxAFgOQzQhmMzIwgHkgwAxWwcLAAAA=)
+  last-modified (1579542984917)
 }

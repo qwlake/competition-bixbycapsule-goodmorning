@@ -32,7 +32,7 @@ endpoints {
       local-endpoint (report/UpdateReport.js)
     }
     action-endpoint (CommitReport) {
-      accepted-inputs (timersReport, command)
+      accepted-inputs (timersReport, commit)
       local-endpoint (report/commitReport.js)
     }
   }
