@@ -10,14 +10,28 @@ module.exports.function = function setUpTimers (sleepPeriodHours, sleepPeriodMin
   let until = zonedDT.plusHours(sleepPeriodHours);
   until.plusMinutes(sleepPeriodMinutes);
   zonedDT = zonedDT.plusMinutes(14);
+  let cycle = 0;
+  let resultMessage = "";
   while (zonedDT.isBefore(until)) { //
     zonedDT = zonedDT.plusMinutes(90);
+    cycle = cycle + 1;
   }
+  let timerTime = utils.toVivDateTime(zonedDT);
+  if (cycle >= 6) {
+    resultMessage = "9시간 이상의 수면은 좋지 않아요.";
+  } else if (cycle < 3) {
+    resultMessage = "4시간 미만의 수면은 좋지 않아요.";
+  } else {
+    resultMessage = timerTime.time + "으로 알람을 맞출게요.";
+  }
+  let date = new Date(zonedDT.toString());
+  let millisec = date.getDate();
   timerList.push({
-    timerTime:utils.toVivDateTime(zonedDT),
-    stringTime:zonedDT.toString(),
+    timerTime:timerTime,
+    millisec:millisec,
     reason:"일어날 시간",
-    hasReason:true,});
+    hasReason:true,
+    resultMessage:resultMessage});
   console.log(timerList);
   return {timer:timerList};
 }

@@ -1,0 +1,5 @@
+train (t-9mjf8cc7jaqykpgtzwpfepdu5) {
+  utterance ("[g:TimerList] {[g:WakeupTime] (오늘 오후 11시)[v:time.DateTimeExpression]}에 알람")
+  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwiofnFoSWuCSB1ZWzCCPVU14YnZqaQFICYN0WWaZXgmQpeeSWJIKEnKtKChKLS7OzM9jYGZgZGACkgxgmhFIswAxiM8EkQMA)
+  last-modified (1579583063361)
+}
