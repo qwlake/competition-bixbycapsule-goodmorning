@@ -17,6 +17,6 @@ result-view {
   // }
   
   app-launch {
-    payload-uri ("intent://clockpackage#Intent;scheme=alarm;package=com.sec.android.app.clockpackage;alarmAlertDate=#{value(this.timer.timerTime.date)};alarmTime=#{value(this.timer.timerTime.time)};alarmTime=#{value(this.timer.reason)}end")
+    payload-uri ("com.mysample.alarmme://setalarm?ISO_ZONED_DATE_TIME=#{value(this.timer.stringTime)}&message=TEST")
   }
 }

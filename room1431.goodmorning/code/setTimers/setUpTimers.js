@@ -15,6 +15,7 @@ module.exports.function = function setUpTimers (sleepPeriodHours, sleepPeriodMin
   }
   timerList.push({
     timerTime:utils.toVivDateTime(zonedDT),
+    stringTime:zonedDT.toString(),
     reason:"일어날 시간",
     hasReason:true,});
   console.log(timerList);
