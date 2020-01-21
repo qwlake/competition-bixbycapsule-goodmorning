@@ -3,13 +3,9 @@ structure (Timer) {
     type (time.DateTime)
     min (Required) max (One)
   }
-  property (sleepCycle) {
-    type (SleepCycle)
-    min (Required) max (One)
-  }
-  property (imageUrl) {
-    type (ImageUrl)
-    min (Required) max (One)
+  property (millisec) {
+    type (Millisec)
+    min (Optional) max (One)
   }
   property (reason) {
     type (Reason)
@@ -18,5 +14,9 @@ structure (Timer) {
   property (hasReason) {
     type (core.Boolean)
     min (Required) max (One)
+  }
+  property (resultMessage) {
+    type (ResultMessage)
+    min (Optional) max (One)
   }
 }

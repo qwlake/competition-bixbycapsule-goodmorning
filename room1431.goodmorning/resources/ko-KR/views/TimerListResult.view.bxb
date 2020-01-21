@@ -1,0 +1,22 @@
+result-view {
+  match: TimerList (this)
+
+  message("#{value(this.timer[0].resultMessage)}")
+
+  // render {
+  //   list-of (this.timer) {
+  //     has-details (true)
+  //     where-each (item) {
+  //       layout-macro (TimerCard) {
+  //         param (timer) {
+  //           expression (item)
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  
+  app-launch {
+    payload-uri ("com.mysample.alarmme://setalarm?millisec=#{value(this.timer.millisec)}&message=#{value(this.timer.reason)}")
+  }
+}

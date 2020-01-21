@@ -1,5 +1,5 @@
 train (t-2n2r6bpmimjiro4w2w1zwhqyg) {
-  utterance ("[g:CommitReport] {[g:WakeupTime] (내일 오전 9시)[v:time.DateTimeExpression]}에 일어나고싶어")
-  plan (fY/NCsIwEISntlp9hoJ/DxAo+gRab56q4ll0KUGSDWksPr7pj+Ch9TAwO3yzy2KGtWVW6XaTioL5odhqqQuR052kcTkZtg6rXmbPSskvkvxBBvpnqciWXX/Zi+yokLoj5sNLjrJ0A4+cyF1MpttbWPQy19uTXqZGkFSyEs47kd0c1dHhbSyVpWSNKQKMECLCGBPEfoZPgp8kAJqsVeQVehc3zfgD)
-  last-modified (1579572660365)
+  utterance ("[g:TimerList] {[g:WakeupTime] (내일 오전 8시)[v:time.DateTimeExpression]}에 일어나고싶어")
+  plan (Y2BhkCvKz881NDE21EvPz0/JzS/Ky8xL1wvJzE0t8sksLmFQwiofnFoSWuCSB1ZWzCCPVU14YnZqaQFICYN0WWaZXgmQpeeSWJIKEnKtKChKLS7OzM9jYGZgZGACkgxgmhFIswAxiM8EkQMA)
+  last-modified (1579582614623)
 }
